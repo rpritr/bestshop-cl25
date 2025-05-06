@@ -33,6 +33,9 @@ body { font-family: var(--font-secondary), sans-serif; }
 }
 .header {
     box-shadow: 0 3px 6px var(--color-overlay);
+    position: sticky;
+    top: 0;
+    background-color: var(--color-white);
 }
 .header .container {
     display: flex;
@@ -108,6 +111,8 @@ body { font-family: var(--font-secondary), sans-serif; }
 }
 #cta .section__heading {
     text-align: center;
+}
+.section__heading {
     font: normal normal normal 36px/42px var(--font-primary);
     color: var(--color-black);
 }
@@ -154,3 +159,73 @@ body { font-family: var(--font-secondary), sans-serif; }
 .red { background-color: var(--color-redish); }
 .blue { background-color: var(--color-primary);}
 .green { background-color: var(--color-green); }
+
+#benefits {
+    background-color: var(--color-light-grey) ;
+    padding-top: 106px;
+    padding-bottom: 106px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-white);
+    padding: 38px 71px 38px 36px;
+    margin-bottom: 37px;
+}
+.row:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+#benefits .col {
+    width: 50%;
+}
+#benefits .col:last-of-type {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#benefits .col .section__heading {
+    margin-bottom: 30px;
+}
+#benefits .col .section__description {
+    margin-bottom: 50px;
+}
+hr {
+    width: 327px;
+    height: 4px;
+    border:none;
+    display: inline-block;
+}
+.mbp {
+    max-width: 386px;
+    position: relative;
+    z-index: 1;
+}
+
+.rectangle {
+    width: 180px;
+    height: 180px;
+    border-radius: 40px;
+    position: relative;
+    right: -130px;
+    top: 100px;
+    z-index: 0;
+    rotate: 45deg;
+}
+
+.footer {
+    background: var(--color-light-grey) 0% 0% no-repeat padding-box;
+    box-shadow: 0 -5px 40px #00000029;
+    height: 89px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .header__logo p:last-of-type{
+    font: normal normal normal 11px/15px var(--font-secondary);
+    color: var(--color-grey);
+}
+.footer__social img { margin-right: 20px; }
