@@ -270,6 +270,7 @@ hr {
 .pricing__offer {
     margin-top: 10px;
     margin-bottom: 70px;
+    min-height: 10px;
     font: normal normal bold 12px/10px Raleway;
     color: var(--color-dark-black);
 }
